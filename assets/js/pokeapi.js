@@ -9,5 +9,6 @@ pokeAPI.getpokemon= (offset =0,limit =10)=>{
     
     .then((jsonBody)=>jsonBody.results)
 
-    
 }
+Promise.all(){[
+    fetch(urlpokemon).then(((results)=>console.log(results))]}
