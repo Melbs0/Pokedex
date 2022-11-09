@@ -1,6 +1,11 @@
 
 
 const pokeAPI = {}
+pokeAPI.GetData = (pokemon) =>{
+   return fetch (pokemon.url)
+    .then((response) => response.json() )
+
+}
 pokeAPI.getpokemon= (offset =0,limit =10)=>{
 
     const url = 'https://pokeapi.co/api/v2/pokemon?offset='+offset+'&limit='+limit
@@ -9,6 +14,15 @@ pokeAPI.getpokemon= (offset =0,limit =10)=>{
     
     .then((jsonBody)=>jsonBody.results)
 
+    .then((pokemons)=> pokemons.map((pokeAPI.GetData)))
+
+    .then ((detReq) => Promise.all(detReq))
+
+    .then((detReq)=> {
+        console.log(detReq)
+        return detReq
+   
+    }
+    )
+
 }
-Promise.all(){[
-    fetch(urlpokemon).then(((results)=>console.log(results))]}
