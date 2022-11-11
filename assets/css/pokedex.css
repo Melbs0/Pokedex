@@ -30,7 +30,7 @@
         background-color: #ee7f30;}
     .water{
         background-color: #678fee;}
-    .eletric{
+    .electric{
         background-color: #f7cf2e;}
     .ice{
         background-color: #98d5d7;}
@@ -40,7 +40,7 @@
         background-color: #a98ffa;}
     .poison{
         background-color: #a040a0;}
-    .fighter{
+    .fighting{
         background-color: #bf3029;}
     .psychic{
         background-color: #f65687;}
@@ -114,7 +114,7 @@
     width: 100;
 }
 .pagination button{
-
+background-blend-mode: color;
     border-radius: 1rem;
     border-top-color: white;
     border-bottom-style: dashed;

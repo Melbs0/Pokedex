@@ -17,7 +17,7 @@ function pokemonToLi (pokemonModel){
             </li>
             `
 }
-const limit = 10
+const limit = 12
 let offset = 0
 
 function loadItens(offset,limit){
@@ -28,12 +28,14 @@ pokeAPI.getpokemon(offset,limit).then((pokemonList = [])=>{
     
 }
 )
-loadItens(offset,limit)
 
 .catch((Error)=>console.log(Error))
 }
+
+loadItens(offset,limit)
+
 loadMoreButton.addEventListener('click',() => 
-{offset++
-return loadItens()
+{offset += limit
+return loadItens(offset,limit)
 }
 )

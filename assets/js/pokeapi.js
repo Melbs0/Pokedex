@@ -5,7 +5,7 @@ const pokeAPI = {}
 
 function dataToModel(getData){
     const newPOK = new pokemonModel()
-newPOK.number = getData.order
+newPOK.number = getData.id
 newPOK.name = getData.name
 newPOK.types = getData.types.map((typeSlot) => typeSlot.type.name)
 newPOK.Type = getData.types[0]
