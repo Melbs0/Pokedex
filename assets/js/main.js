@@ -2,7 +2,8 @@ const pokemonOl = document.getElementById('pokemonslist')
 const loadMoreButton = document.getElementById('loadMore')
 
 function pokemonToLi (pokemonModel){
-    return `<li class="pokemon ${pokemonModel.types[0]}">
+    return `<a id ="anchor" href = "pokemonDetail.html?id=${pokemonModel.number}">
+    <li class="pokemon ${pokemonModel.types[0]}">
     <span class="number">#${pokemonModel.number}</span>
                 <span class="name">${pokemonModel.name}</span>
                 <div class="detail">
@@ -15,8 +16,13 @@ function pokemonToLi (pokemonModel){
                 </div>
                 
             </li>
+            </a>
             `
+           
 }
+
+
+
 const limit = 12
 let offset = 0
 
@@ -34,8 +40,8 @@ pokeAPI.getpokemon(offset,limit).then((pokemonList = [])=>{
 
 loadItens(offset,limit)
 
-loadMoreButton.addEventListener('click',() => 
-{offset += limit
+loadMoreButton.addEventListener('click',() => {offset += limit
 return loadItens(offset,limit)
 }
 )
+

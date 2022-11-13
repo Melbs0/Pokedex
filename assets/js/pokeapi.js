@@ -10,6 +10,7 @@ newPOK.name = getData.name
 newPOK.types = getData.types.map((typeSlot) => typeSlot.type.name)
 newPOK.Type = getData.types[0]
 newPOK.photo = getData.sprites.other.dream_world.front_default
+newPOK.url = getData.url 
 return newPOK
 }
 
@@ -20,6 +21,8 @@ pokeAPI.GetData = (pokemon) =>{
     .then(dataToModel)
 
 }
+
+
 
 
 

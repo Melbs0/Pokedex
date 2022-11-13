@@ -114,7 +114,6 @@
     width: 100;
 }
 .pagination button{
-background-blend-mode: color;
     border-radius: 1rem;
     border-top-color: white;
     border-bottom-style: dashed;

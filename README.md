@@ -16,8 +16,6 @@ _made with blood, sweat, tears and love for OrangeTech+_
 
 ## some ohter stuff i want to implement (~~emphazis on the want~~) to make this a bit better
 
-- [ ]  A page to show more details 'bout the pokemon you want
+- [ ] A page to show more details 'bout the pokemon you want
 
-- [ ]  A search engine to find anny pokemon you think (~~or any that's is present on the database kekw~~)
-
-
+- [ ] A search engine to find anny pokemon you think (~~or any that's is present on the database kekw~~)

@@ -4,6 +4,6 @@ class pokemonModel{
     Type;
     types = [];
     photo;
-
+    url;
 
 }
