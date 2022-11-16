@@ -2,17 +2,32 @@
 
 const pokeAPI = {}
 
-
-function dataToModel(getData){
-    const newPOK = new pokemonModel()
-newPOK.number = getData.id
+function dataToModel (getData){
+const newPOK = new pokemonModel()
+//types = getData.types.map((typeSlot) => typeSlot.type.name)
+newPOK.abilitie1 = getData.abilities[0].name
+newPOK.abilitie2 = getData.abilities
+newPOK.id = getData.id
 newPOK.name = getData.name
-newPOK.types = getData.types.map((typeSlot) => typeSlot.type.name)
-newPOK.Type = getData.types[0]
-newPOK.photo = getData.sprites.other.dream_world.front_default
-newPOK.url = getData.url 
+newPOK.sprite = getData.sprites.other.dream_world.front_default
+newPOK.hp = getData.stats
+newPOK.atack = getData.stats[1]
+newPOK.defense = getData.stats[2]
+newPOK.espAtk = getData.stats[3]
+newPOK.espDef = getData.stats[4]
+newPOK.speed = getData.stats[5]
+//newPOK.type1 = types[0]
+//newPOK.type2 = types[1]
 return newPOK
 }
+
+pokeAPI.GetDetails = (pokemonURL) =>{
+    return fetch (pokemonURL)
+     .then((response) => response.json() )
+     .then((jsonBody)=>jsonBody.results)
+     .then(dataToModel)
+ 
+ }
 
 
 pokeAPI.GetData = (pokemon) =>{

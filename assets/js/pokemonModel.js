@@ -1,9 +1,15 @@
 class pokemonModel{
-    number;
-    name;
-    Type;
-    types = [];
-    photo;
-    url;
 
+    abilitie2;
+    id;
+    name;
+    sprite;
+    hp;
+    atack;
+    defense;
+    espAtk;
+    espDef;
+    speed;
+    type1;
+    type2;
 }
