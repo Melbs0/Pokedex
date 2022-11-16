@@ -30,7 +30,7 @@
         background-color: #ee7f30;}
     .water{
         background-color: #678fee;}
-    .electric{
+    .eletric{
         background-color: #f7cf2e;}
     .ice{
         background-color: #98d5d7;}
@@ -40,7 +40,7 @@
         background-color: #a98ffa;}
     .poison{
         background-color: #a040a0;}
-    .fighting{
+    .fighter{
         background-color: #bf3029;}
     .psychic{
         background-color: #f65687;}
@@ -63,6 +63,7 @@
     color: white;
     margin: .5rem;
     padding: 1rem;
+    background-color: #49d0b0;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -76,7 +77,6 @@
 .pokemon .name{
     color: #fff;
     margin-bottom: 0;
-    text-transform: capitalize;
 }
 .pokemon .detail{
     display: flex;
@@ -92,12 +92,12 @@
 }
 .pokemon .detail .types .type {
     text-align: center;
+    background-color: #61e1ca;
     color: #fff;
     padding: .25rem .5rem;
     font-size: .625rem;
     margin: .125rem 0rem;
     border-radius: 1rem;
-    filter: brightness(1.1);
 }
 .pokemons .detail img{
     height: 70px;
@@ -114,6 +114,7 @@
     width: 100;
 }
 .pagination button{
+
     border-radius: 1rem;
     border-top-color: white;
     border-bottom-style: dashed;
